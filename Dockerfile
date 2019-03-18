@@ -18,7 +18,7 @@ WORKDIR /opt/django
 RUN export MYSQL_DB_NAME='videoapp'
 RUN export MYSQL_USER_NAME='django'
 RUN export MYSQL_PASSWORD='secret'
-RUN export MYSQL_HOST='10.211.203.60'
+RUN export MYSQL_HOST='<mysql_host>'
 RUN export MYSQL_PORT='12458'
 RUN django-admin startproject Videoapp
 RUN python3 Videoapp/manage.py startapp videoapp
